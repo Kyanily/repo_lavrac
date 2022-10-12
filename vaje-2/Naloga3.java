@@ -1,24 +1,21 @@
 import java.util.Scanner;
 
-class Naloga1 {
+class Naloga3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        Scanner num1 = new Scanner(System.in);
+        Scanner num2 = new Scanner(System.in);
+        double a, b;
+        a = num1.nextInt();
+        b = num2.nextInt();
 
-        if (num < 10) {
-            System.out.println("Stevilo je enomestno");
-        } else if (num >= 10) {
-            System.out.println("Stevilo je dvomestno");
-        } else if (num >= 100) {
-            System.out.println("Stevilo je trimestno");
-        } else if (num >= 1000) {
-            System.out.println("Stevilo je stirimestno");
-        } else if (num >= 10000) {
-            System.out.println("Stevilo je petmestno");
-        } else if (num >= 100000) {
-            System.out.println("Stevilo je sestmestno");
+        if (a < b) {
+            System.out.println("a = manjse");
+            System.out.println("b = vecje");
+        } else if (a > b) {
+            System.out.println("a = vecje");
+            System.out.println("b = manjse");
         } else {
-            System.out.println("Stevilo je vecmestno");
+            System.out.print("Stevili sta enaki");
         }
     }
 }
