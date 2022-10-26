@@ -7,8 +7,24 @@ class Naloga2 {
         int a = sc.nextInt();
         System.out.println(a);
 
-        for (int i = 1; i <= a; i++) {
-            System.out.print(i + a);
+        int x = a; 
+
+
+        for (int i = 1; i < x; i++) {
+            a = a + i;
+            
         }
+
+        for (;;) {
+            if (x > 1000 || x < 10) {
+                System.out.println("Not a valid number.");
+                break;
+            } else {
+                System.out.print("Result: ");
+                System.out.println(a);
+                break;
+            }
+        }
+
     }
 }
